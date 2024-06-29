@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="god_container" >
+        <header>
+            <div class="new_task_container" >
+                <span class="material-symbols-rounded">task</span>
+                <input id="task_name" type="text" placeholder="type your task and press Enter" />
+                <span id="add_task" class="material-symbols-rounded" title="Add task" >add_circle</span>
+            </div>
+            <div class="actions" >
+                <button id="complete_all" title="Mark all tasks as complete" ><span class="material-symbols-rounded">done_all</span>Complete all tasks</button>
+                <button id="clear_completed" title="Remove completed tasks from list" >Clear completed</button>
+            </div>
+        </header>
+        <main>
+            <ul class="task_list" >
+                <!-- <li class="task" >
+                    <input type="checkbox" class="task_completion_selector" checked />
+                    <span class="material-symbols-rounded completion_indicator incomplete_task_indicator" title="Click to mark as complete" >radio_button_unchecked</span>
+                    <span class="material-symbols-rounded completion_indicator complete_task_indicator" title="Click to mark as incomplete" >radio_button_checked</span>
+                    <p class="task_description" >Keep a curious soul.</p>
+                    <span class="material-symbols-rounded remove_task_button" title="Remove task" >cancel</span>
+                </li>
+                <li class="task" >
+                    <input type="checkbox" class="task_completion_selector" checked />
+                    <span class="material-symbols-rounded completion_indicator incomplete_task_indicator" title="Click to mark as complete" >radio_button_unchecked</span>
+                    <span class="material-symbols-rounded completion_indicator complete_task_indicator" title="Click to mark as incomplete" >radio_button_checked</span>
+                    <p class="task_description" >Keep a curious soul.</p>
+                    <span class="material-symbols-rounded remove_task_button" title="Remove task" >cancel</span>
+                </li> -->
+            </ul>
+        </main>
+        <footer>
+            <span class="task_count" >
+                <span id="incomplete_task_count" >0</span>
+                <span>tasks left</span>
+            </span>
+            <span class="list_filters" title="filters" >
+                <button class="filter all_tasks_filter active_filter" title="Show all tasks" >All</button>
+                <button class="filter incomplete_tasks_filter " title="Show incomplete tasks" >Incomplete</button>
+                <button class="filter complete_tasks_filter " title="Show complete tasks" >Completed</button>
+            </span>
+        </footer>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
